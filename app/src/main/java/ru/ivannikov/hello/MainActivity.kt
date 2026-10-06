@@ -28,18 +28,18 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 /**
- * Главная Activity приложения, инициализирующая Compose-интерфейс[cite: 1].
+ * Главная Activity приложения, инициализирующая Compose-интерфейс.
  *
  * @author Иванников Сергей Сергеевич
  * @version 1.0
- * @since 2026-09-03[cite: 1]
+ * @since 2026-10-06
  */
 class MainActivity : ComponentActivity() {
 
     /**
-     * Точка входа в жизненный цикл Activity[cite: 1].
+     * Точка входа в жизненный цикл Activity.
      *
-     * @param savedInstanceState Сохраненное состояние экрана[cite: 1].
+     * @param savedInstanceState Сохраненное состояние экрана.
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,12 +61,12 @@ class MainActivity : ComponentActivity() {
 }
 
 /**
- * Composable-компонент карточки студента с оформлением через Modifier[cite: 1].
+ * Composable-компонент карточки студента с оформлением через Modifier.
  *
  * @param studentName ФИО обучающегося.
  * @param group Академическая группа.
  * @param teacher ФИО преподавателя дисциплины.
- * @param modifier Модификатор внешнего вида и расположения контейнера[cite: 1].
+ * @param modifier Модификатор внешнего вида и расположения контейнера.
  */
 @Composable
 fun GreetingCard(
@@ -99,7 +99,7 @@ fun GreetingCard(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(
-                    text = "Hello, Jetpack Compose!",
+                    text = "Моё первое приложение",
                     fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.primary,
@@ -136,7 +136,7 @@ fun GreetingCard(
 }
 
 /**
- * Предпросмотр карточки в среде Android Studio[cite: 1].
+ * Предпросмотр карточки в среде Android Studio.
  */
 @Preview(showBackground = true)
 @Composable
